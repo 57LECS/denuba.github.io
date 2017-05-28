@@ -480,6 +480,69 @@ h1, h2, h3, h4, h5, h6 {
 			}
 		}
 	}
+	.box-testimonyR {
+		margin-bottom: 2em;
+		float: right;
+		a {
+			color: rgba(255,255,255,.5);
+			&:hover, &:focus, &:active {
+				color: rgba(255,255,255,1);
+				text-decoration: none;
+			}
+		}
+		blockquote {
+			padding-left: 0;
+			border-left: none;
+			padding: 40px;
+			background: $brand-white;
+			
+			position: relative;
+			@include border-radius(4px);
+			&:after {
+			   content: "";
+			   position: absolute;
+			   top: 100%;
+			   left: 40px;
+			   border-top: 15px solid black;
+			   border-top-color: $brand-white; 
+			   border-left: 15px solid transparent;
+			   border-right: 15px solid transparent; 
+			}
+			.quote {
+				position: absolute;
+				top: 0;
+				left: 10px;
+				text-align: center;
+				font-size: 30px;
+				line-height: 0;
+				display: table;
+				color: $brand-white;
+				width: 56px;
+				height: 56px;
+				margin-top: -30px;
+				background: $brand-primary;
+				@include border-radius(50%);
+				> span {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+			p {
+				font-style: italic;
+			}
+		}
+		.author {
+			line-height: 20px;
+			color: rgba(255,255,255,1);
+			font-size: 20px;
+			margin-left: 20px;
+			.subtext {
+				display: block;
+				color: rgba(255,255,255,.5);
+				font-size: 16px;
+			}
+		}
+	}
 }
 #fh5co-pricing {
 	.price-box {
