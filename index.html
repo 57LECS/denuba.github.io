@@ -345,11 +345,6 @@
 				</div>
 				<div class="clearfix visible-sm-block visible-xs-block"></div>
 			</div>
-			<div class="row">
-				<div class="col-md-4 col-md-offset-4 single-animate animate-features-3">
-					<a href="#" class="btn btn-primary btn-block">Learn More</a>
-				</div>
-			</div>
 		</div>
 	</div>
 
@@ -375,11 +370,132 @@
 						</blockquote>
 						<p class="author">Rafa Gomez<!--a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a--> <span class="subtext" id="txtHr1">00:00</span--></p>
 						<div class="col-md-6 single-animate animate-features-3">
-							<a href="#" class="btn btn-warning btn-block">Sugerencia</a>
+							<a href="#" class="btn btn-warning btn-block" data-toggle="modal" data-target="#modalSugerencia">Sugerencia</a>
 						</div>
 						<div class="col-md-6 single-animate animate-features-3">
 							<a href="#" class="btn btn-warning btn-block ">Queja</a>
 						</div>
+					</div>
+				</div>
+				</div>
+			</form>
+			<div class="modal fade" id="modalQueja" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+    					<form>
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Gracias por ayudarnos</h4>
+      						</div>
+      						<div class="modal-body">
+      							
+      								<div class="form-group">
+      									<p class="help-block">Lamentamos mucho lo ocurrido porfavor ingresa tu nombre y correo para poder ayudarte.</p>
+      									<label for="txtname" class="col-sm-3 control-label">Nombre</label>
+      									<input type="text" class="form-control" id="txtnameQ" placeholder="Luis Calderon" required>
+      									<label for="inputEmail3" class="col-sm-3 control-label">Correo</label>
+    									<div class="col-sm-9">
+      										<input type="email" class="form-control" id="inputEmail3" placeholder="inversor@denuba.com" required>
+    									</div>
+      								</div>
+      						</div>
+      						<div class="modal-footer">
+        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        						<input type="submit" id="btnMoQu" class="btn btn-primary">Encontrar Solucion</button>
+      						</div>
+      					</form>
+    				</div>
+  				</div>
+			</div>
+			<div class="modal fade" id="modalSugerencia" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+    					<form>
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Gracias por ayudarnos</h4>
+      						</div>
+      						<div class="modal-body">
+      							
+      								<div class="form-group">
+      									<p class="help-block">Que inviertas tu tiempo en ayudarnos significa mucho para nosotros. Deja tu correo y te haremos llegar un descuento.</p>
+      									<label for="txtname" class="col-sm-3 control-label">Nombre</label>
+      									<input type="text" class="form-control" id="txtnameS" placeholder="Luis Calderon" required>
+      									<label for="inputEmail3S" class="col-sm-3 control-label">Correo</label>
+    									<div class="col-sm-9">
+      										<input type="email" class="form-control" id="inputEmail3S" placeholder="inversor@denuba.com">
+    									</div>
+      								</div>
+      						</div>
+      						<div class="modal-footer">
+        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        						<input type="submit" id="btnMoSu" class="btn btn-primary">Ayudar a Denuba</button>
+      						</div>
+      					</form>
+    				</div>
+  				</div>
+			</div>
+			<form id="msgCliente">
+			<div class="row">
+				<div class="form-group">
+					<div class="box-testimonyR to-animate col-xs-12">
+						<blockquote>
+								<div class="form-group">
+										<textarea id="txtMsg1" class="form-control" style="resize: vertical;" rows="3"></textarea>
+										<button type="button" id="btnDemoEnviarSu" class="btn btn-primary">Enviar</button>
+										<button type="button" id="btnDemoEnviarQu" class="btn btn-primary">Enviar</button>
+										<div class="sharethis-inline-share-buttons"></div>
+								</div>
+						</blockquote>
+						<p class="author" id="msgAut" style="">Usuario<span class="subtext" id="time1">00:00</span--></p>
+					</div>
+				</div>
+			</div>
+			</form>
+			<div class="modal fade" id="modalFinSu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+    					<form>
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Acabas de mejorar denuba</h4>
+      						</div>
+      						<div class="modal-body">
+      							
+      								<div class="form-group">
+      									<p class="help-block">Gracias a ti denuba puede ofrecer un mejor servicio, con gusto te haremos llegar un descuento como agradecimiento a tu inversión.</p>
+      								</div>
+      						</div>
+      						<div class="modal-footer">
+        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        						<input type="submit" id="btnMoQu" class="btn btn-primary">Encontrar Solucion</button>
+      						</div>
+      					</form>
+    				</div>
+  				</div>
+			</div>
+			<form id="typeMsg">
+				<div class="row">
+				<div class="col-md-12 form-group">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<div id="typing">
+								<img src="http://i.imgur.com/bMB7QpX.gif">
+							</div>
+						</blockquote>
+					</div>
+				</div>
+				</div>
+			</form>
+			<form id="newMsg">
+				<div class="row">
+				<div class="col-md-12 form-group">
+					<div class="box-testimony to-animate">
+						<blockquote id="msg">
+							<!--span class="quote"><span><i class="icon-quote-left"></i></span></span-->
+							<p>Bienvenido a denuba. Gracias por invertir tu tiempo y ayudarnos a mejorar como empresa, porfavor elige si gustas hacer una queja o suegerencia</p>
+						</blockquote>
+						<p class="author">Rafa Gomez<!--a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a--> <span class="subtext" id="time2">00:00</span--></p>
 					</div>
 				</div>
 				</div>
@@ -399,19 +515,6 @@
 					</div>
 				</div>
 			</div>
-			</form>
-			<form id="newMsg" style="visibility: ">
-				<div class="row">
-				<div class="col-md-12 form-group">
-					<div class="box-testimony to-animate">
-						<blockquote>
-							<!--span class="quote"><span><i class="icon-quote-left"></i></span></span-->
-							<p>Bienvenido a denuba. Gracias por invertir tu tiempo y ayudarnos a mejorar como empresa, porfavor elige si gustas hacer una queja o suegerencia</p>
-						</blockquote>
-						<p class="author">Rafa Gomez<!--a href="http://freehtml5.co/" target="_blank">FREEHTML5.co</a--> <span class="subtext">00:00</span--></p>
-					</div>
-				</div>
-				</div>
 			</form>
 		</div>
 	</div>
@@ -457,7 +560,7 @@
       						<div class="modal-body">
       							<form">
       								<div class="form-group">
-      									<p class="help-block"> Todavia no estamos listos, deja tu correo y te mantendremos informado de denuba.</p>
+      									<p class="help-block"> Todavia no estamos listos, deja tu correo y te mantendremos informado de denuba. Recuerda que puedes apoyarnos en playbusiness para fondearnos más rápido. </p>
       									<label for="inputEmail3" class="col-sm-3 control-label">Tu correo</label>
     									<div class="col-sm-9">
       										<input type="email" class="form-control" id="inputEmail3" placeholder="inversor@denuba.com">
@@ -474,7 +577,7 @@
       						<div class="modal-footer">
         						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
         						<button type="button" class="btn btn-primary">Enviar correo</button>
-        						<button type="button" class="btn btn-success">Invertir</button>
+        						<a href="" class="btn btn-success btn-block">Play Business</a>
       						</div>
     					</div>
   					</div>
