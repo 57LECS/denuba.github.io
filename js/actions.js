@@ -8,14 +8,14 @@ $(document).ready(function(){
 	$("#txtHr1").text(time);
 	$("#btnMoSu").click(function(){
         $("#msgCliente").show();        
-        var dt = new Date();
 		var name = $("#txtnameS").val();
 		mail = $("#inputEmail3S").val();
 		$("#msgAut").text(name);
 		$("#modalSugerencia").modal("toggle");
+		$("#btnDemoEnviarQu").hide();
 	})
 
-	$("#btnDemoEnviar").click(function(){
+	$("#btnDemoEnviarQu").click(function(){
 		var dt = new Date();
 		var time1 = dt.getHours() + ":" + dt.getMinutes()
 		$("#time1").text(time1);
