@@ -279,7 +279,7 @@
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 single-animate animate-features-2">
 							<h3>Tu cliente mas instisfecho es es tu mejor fuente de aprendizaje. &Tab; -Bill Gates.</h3>
-							<h3>Como empresas tenemos varias areas de oportunidad.Porque no identificar las que son mas importantes para nuestros clientes. Aprovechemos sus experencias, aprendamos de nuestros errores y <strong>compartamos soluciones </strong> </h3>
+							<h3>Como empresas tenemos varias areas de oportunidad.Porque no identificar las que son mas importantes para nuestros clientes. Aprovechemos sus experencias, aprendamos de nuestros errores y <strong>compartamos soluciones 	</strong> </h3>
 						</div>
 					</div>
 				</div>
@@ -408,17 +408,18 @@
       							
       								<div class="form-group">
       									<p class="help-block">Que inviertas tu tiempo en ayudarnos significa mucho para nosotros. Deja tu correo y te haremos llegar un descuento.</p>
-      									<label for="txtname" class="col-sm-3 control-label">Nombre</label>
-      									<input type="text" class="form-control" id="txtnameS" placeholder="Luis Calderon" required>
+      									<label for="txtnameS" class="col-sm-2 control-label">Nombre</label>
+      									
+      										<input type="text" class="form-control" id="txtnameS" placeholder="Luis Calderon" required>
+      									
       									<label for="inputEmail3S" class="col-sm-3 control-label">Correo</label>
-    									<div class="col-sm-9">
       										<input type="email" class="form-control" id="inputEmail3S" placeholder="inversor@denuba.com">
-    									</div>
+      									<p class="help-block" id="txtNoti"></p>
       								</div>
       						</div>
       						<div class="modal-footer">
         						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-        						<input type="submit" id="btnMoSu" class="btn btn-primary">Ayudar a Denuba</button>
+        						<input type="submit" id="btnMoSu" class="btn btn-primary" value="Ayudar a Denuba">
       						</div>
       					</form>
     				</div>
@@ -431,7 +432,7 @@
 						<blockquote>
 								<div class="form-group">
 										<textarea id="txtMsg1" class="form-control" style="resize: vertical;" rows="3"></textarea>
-										<a href="#" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalFinSu">Enviar</a>
+										<a href="#" id="btnDemoSuFin" class="btn btn-primary btn-block" data-toggle="modal" data-target="#modalFinSu">Enviar</a>
 										<button type="button" id="btnDemoEnviarQu" class="btn btn-primary">Enviar</button>
 										<div class="sharethis-inline-share-buttons"></div>
 								</div>
@@ -450,14 +451,13 @@
         						<h4 class="modal-title" id="myModalLabel">Acabas de mejorar denuba</h4>
       						</div>
       						<div class="modal-body">
-      							
-      								<div class="form-group">
-      									<p class="help-block">Gracias a ti denuba puede ofrecer un mejor servicio, con gusto te haremos llegar un descuento como agradecimiento a tu inversión de tiempo.</p>
-      								</div>
+      							<div class="form-group">
+      								<p class="help-block">Hemos recibido tu sugerencia. Gracias a ti denuba puede ofrecer un mejor servicio, con gusto te haremos llegar un descuento como agradecimiento por el tiempo invertido.</p>
+      							 </div>
       						</div>
       						<div class="modal-footer">
         						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-        						<input type="submit" id="btnMoQu" class="btn btn-primary">Encontrar Solucion</button>
+        						<input type="submit" id="btnMoQu" class="btn btn-primary" value="Continuar">
       						</div>
       					</form>
     				</div>
@@ -489,15 +489,15 @@
 				</div>
 				</div>
 			</form>
-			<form>
+			<form id="usrMnsgSeg">
 			<div class="row">
 				<div class="form-group">
 					<div class="box-testimonyR to-animate col-xs-12">
 						<blockquote>
 								<div class="form-group">
-										<textarea class="form-control" style="resize: vertical;" rows="3"></textarea>
-										<button type="button" id="btnDemoEnviar" class="btn btn-primary">Enviar</button>
-										<div class="sharethis-inline-share-buttons"></div>
+									<textarea class="form-control" style="resize: vertical;" rows="3"></textarea>
+									<button type="button" id="btnDemoEnviar" class="btn btn-primary">Enviar</button>
+									<div class="sharethis-inline-share-buttons"></div>
 								</div>
 						</blockquote>
 						<p class="author" style="">Usuario<span class="subtext">00:00</span--></p>
@@ -505,6 +505,38 @@
 				</div>
 			</div>
 			</form>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>Denuba es una excelente idea, bien planeada y de alta funcionalidad. Sin embargo tienen muy poca dufucion dentro del mercado</p>
+						</blockquote>
+						<p class="author">Jorge Cruz<span class="subtext" id="time2">14:08</span--></p>
+					</div>
+					
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>Una recomendacion super importante yasi con una critica la que puede ser resuelta de manera muy facil y que no nos cause ninguna problematica con los señores inversionistas</p>
+						</blockquote>
+						<p class="author">Andrea Hernandez<span class="subtext" id="time2">10:02</span--></p>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="box-testimony to-animate">
+						<blockquote>
+							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
+							<p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+						</blockquote>
+						<p class="author">John Doe, Founder <a href="#">FREEHTML5.co</a> <span class="subtext">Creative Director</span></p>
+					</div>
+				</div>
+			</div>
+
+
 		</div>
 	</div>
 
@@ -512,10 +544,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 section-heading text-center">
-					<h2 class="single-animate animate-pricing-1">Precios</h2>
+					<h2 class="single-animate animate-pricing-1">Trabajemos juntos</h2>
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 subtext single-animate animate-pricing-2">
-							<h3>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</h3>
+							<h3>Comienza a aprender de tus clientes. Al formar alianza con denuba estaremos listos cliente, denuba y empresa para poder cambiar la idea de queja y desde este momento compartamos soluciones</h3>
 						</div>
 					</div>
 				</div>
@@ -743,6 +775,7 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- actions -->
 	<script src="js/actions.js"></script>
+
 
 
 
