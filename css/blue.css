@@ -11,6 +11,10 @@
     visibility: hidden;
     display: none;
   }
+  #imgBorrar{
+    visibility: hidden;
+    display: none;
+  }
 
 }
 /* =======================================================
