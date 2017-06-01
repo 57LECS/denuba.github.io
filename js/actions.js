@@ -24,6 +24,8 @@ $(document).ready(function(){
 		var name = $("#txtnameS").val();
 		var mail = $("#inputEmail3S").val();
 		if (name != "" && mail != "") {
+			gNombre = name;
+			gCorreo = mail;
 			$("#msgCliente").show();        
 			$("#msgAut").text(name);
 			$("#modalSugerencia").modal("toggle");
@@ -62,6 +64,13 @@ $(document).ready(function(){
 		$("#correoFin").val(gCorreo);
 		$("#nombreFin").val(gNombre);
 	})
+
+	$("#btnDemoSuFin").click(function(){
+		//boton para abrir el primer cuadro de dialogo del usuario
+		$("#correoFinSu").val(gCorreo);
+		$("#nombreFinSu").val(gNombre);
+	})
+
 
 	
 	$("#btnDemoEnviarQu").click(function(){

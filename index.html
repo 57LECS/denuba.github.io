@@ -415,26 +415,6 @@
 				</div>
 			</div>
 			</form>
-			<div class="modal fade" id="modalFinSu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  				<div class="modal-dialog" role="document">
-    				<div class="modal-content">
-    					<form>
-      						<div class="modal-header">
-        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        						<h4 class="modal-title" id="myModalLabel">Acabas de mejorar denuba</h4>
-      						</div>
-      						<div class="modal-body">
-      							<div class="form-group">
-      								<p class="help-block">Hemos recibido tu sugerencia. Gracias a ti denuba puede ofrecer un mejor servicio, con gusto te haremos llegar un descuento como agradecimiento por el tiempo invertido.</p>
-      							 </div>
-      						</div>
-      						<div class="modal-footer">
-        						<input type="submit" id="btnFinSu" class="btn btn-primary" value="Continuar">
-      						</div>
-      					</form>
-    				</div>
-  				</div>
-			</div>
 			<form id="typeMsg">
 				<div class="row">
 				<div class="col-md-12 form-group">
@@ -592,6 +572,31 @@
   				</div>
 			</div>
 
+			<div class="modal fade" id="modalFinSu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Compartimos soluciones</h4>
+      						</div>
+      						<div class="modal-body">
+      								<div class="form-group">
+      								<p class="help-block">Gracias a ti denuba puede ofrecer un mejor servicio, con gusto te haremos llegar un descuento como agradecimiento por el tiempo invertido.</p>
+      									<p class="help-block">Porfavor ayudanos a confirmar tu nombre y correo.</p>
+      									<form method="POST" action="http://formspree.io/lecs1496@gmail.com">
+  											<input name="email" id="correoFinSu" placeholder="Your email" type="email">
+  											<input type="text" id="nombreFinSu" name="nombre" placeholder="nombre">
+  											<button type="submit" class="btn btn-primary">Confirmar</button>
+										</form>
+      								</div>
+      						</div>
+      						<div class="modal-footer">
+        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        						<input type="submit" id="btnMoSu" class="btn btn-primary" value="Ayudar a Denuba">
+      						</div>
+    				</div>
+  				</div>
+			</div>
 
 			
 
@@ -610,7 +615,7 @@
 							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
 							<p>Denuba es una excelente idea, bien planeada y de alta funcionalidad. Sin embargo tienen muy poca dufusión dentro del mercado</p>
 						</blockquote>
-						<p class="author">Jorge Cruz<span class="subtext" id="time2">14:08</span--></p>
+						<p class="author">Jorge Cruz<span class="subtext" id="time2">19:08</span--></p>
 					</div>
 					
 				</div>
@@ -618,9 +623,9 @@
 					<div class="box-testimony to-animate">
 						<blockquote>
 							<span class="quote"><span><i class="icon-quote-left"></i></span></span>
-							<p>Una recomendacion super importante yasi con una critica la que puede ser resuelta de manera muy facil y que no nos cause ninguna problematica con los señores inversionistas</p>
+							<p>Compartir soluciones suena bastante bien y el hecho que compartartan todo el proceso de la solución suena bastante bien, el unico inconveniente es que puede que su pagina se vea limitada a hispano hablantes, apesar de que con facilidad puede ser exportada a otros paises3</p>
 						</blockquote>
-						<p class="author">Andrea De Alba<span class="subtext" id="time2">10:02</span--></p>
+						<p class="author">Andrea De Alba<span class="subtext" id="time2">19:10</span--></p>
 					</div>
 				</div>
 				<div class="col-md-4" id="newSug">
@@ -679,24 +684,18 @@
       						<div class="modal-body">
       							<form">
       								<div class="form-group">
-      									<p class="help-block"> Todavia no estamos listos, deja tu correo y te mantendremos informado de denuba. Recuerda que puedes apoyarnos en playbusiness para fondearnos más rápido. </p>
-      									<label for="inputEmail3" class="col-sm-3 control-label">Tu correo</label>
-    									<div class="col-sm-9">
-      										<input type="email" class="form-control" id="inputEmail3" placeholder="inversor@denuba.com">
-    									</div>
+      									<p class="help-block"> Todavia no estamos listos, deja tu correo y te mantendremos informado de denuba. Recuerda que puedes apoyarnos en playbusiness para fondearnos más rápido. Ingresa tu correo, nombre y nombre de tu empresa porfavor</p>
+      									<form method="POST" action="http://formspree.io/lecs1496@gmail.com">
+  											<input name="email" placeholder="Your email" type="correo@correo.com">
+  											<input type="text" name="nombre" placeholder="Nombre">
+  											<input type="text" name="empresa" placeholder="Denuba">
+  											<button type="submit" class="btn btn-primary">Confirmar</button>
+										</form>
       								</div>
-      								<div class="checkbox">
-
-    									<label>
-      										<input type="checkbox"> Manterme informado e invertir
-    									</label>
-  									</div>
       							</form>
       						</div>
       						<div class="modal-footer">
-        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-        						<button type="button" class="btn btn-primary">Enviar correo</button>
-        						<a href="" class="btn btn-success btn-block">Play Business</a>
+        						<a href="https://playbusiness.mx/startups/denuba" target="_blank" class="btn btn-success btn-block">Play Business</a>
       						</div>
     					</div>
   					</div>
