@@ -11,7 +11,7 @@ $(document).ready(function() {
 			alert("Surgio un error, porfavor vuelve a intentar");
 		} else {
 		// Returns successful data submission message when the entered information is stored in database.
-			$.post("https://denubacom.000webhostapp.com/email.php", {
+			$.post("https://denuba.com/email.php", {
 				name1: name,
 				email1: email,
 				message1: msg
