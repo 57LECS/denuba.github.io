@@ -353,22 +353,20 @@
         						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         						<h4 class="modal-title" id="myModalLabel">Gracias por ayudarnos</h4>
       						</div>
-      						<form action="https://formspree.io/lecs1496@gmail.com" method="POST">
+      						
       						<div class="modal-body">
-      							
-      								<div class="form-group">
-      									<p class="help-block">Lamentamos mucho lo ocurrido porfavor ingresa tu nombre y correo para poder ayudarte.</p>
-      									<label for="txtnameQ" class="col-sm-3 control-label">Nombre</label>
-      									<input type="text" class="form-control" id="txtnameQ" placeholder="Luis Calderon" required name="nombre">
-      									<label for="inputEmail3" class="col-sm-3 control-label">Correo</label>
-      									<input type="email" class="form-control" id="inputEmail3" placeholder="inversor@denuba.com" required name="correo">
-      									<p class="help-block" id="txtNotiQ"></p>
+      						<div >
+      									<form method="POST" action="http://formspree.io/lecs1496@gmail.com">
+  											<input name="email" placeholder="Your email" type="email">
+  											<textarea name="message" placeholder="Your message"></textarea>
+  											<button type="submit">Send</button>
+										</form>
       								</div>
       						</div>
       						<div class="modal-footer">
-        						<input type="submit" name="btn" id="btnMoQu" class="btn btn-primary" value="Encontrar Solucion">
+        						<button type="submit" id="btnMoQu" class="btn btn-primary" value="Encontrar Solucion"></button>
       						</div>
-      						</form>
+      						
     				</div>
   				</div>
 			</div>
