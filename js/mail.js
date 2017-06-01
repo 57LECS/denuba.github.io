@@ -14,7 +14,7 @@ $(document).ready(function() {
 		$.ajax({
       			url: "https://denuba.com/email.php",
       			method: "POST",
-      			data: {name1: name,email1:  email, message1: msg};
+      			data: {name1: name,email1:  email, message1: msg},
    		   		dataType: "json",
       			success: function(data) {
           			alert("funciona");
