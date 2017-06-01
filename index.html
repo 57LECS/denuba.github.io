@@ -557,7 +557,7 @@
 					<div class="box-testimony to-animate">
 						<blockquote id="msg">
 							<p class="help-block">Agradecemos tu tiempo y esperamos que este demo haya servido para dejar mas claro de lo que Denuba es capaz. ¿Estas decuerdo con la solucion de comunicarte en persona con nosotros?</p>
-      						<input type="submit" id="btnFinDe" class="btn btn-success" value="Deacuerdo">
+      						<input type="submit" id="btnFinSi" class="btn btn-success" value="Deacuerdo">
         					<input type="submit" id="btnFinNo" class="btn btn-danger" value="No Deacuerdo">
 						</blockquote>
 						<p class="author">Rafa Gomez <span class="subtext" id="time2">00:00</span--></p>
@@ -565,7 +565,32 @@
 				</div>
 				</div>
 			</form>
-			
+
+			<div class="modal fade" id="modalFinSi" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Compartimos soluciones</h4>
+      						</div>
+      						<div class="modal-body">
+      								<div class="form-group">
+      									<p class="help-block">Porfavor ayudanos a confirmar tu nombre y correo.</p>
+      									<form method="POST" action="http://formspree.io/lecs1496@gmail.com">
+  											<input name="email" id="correoFin" placeholder="Your email" type="email">
+  											<input type="text" id="nombreFin" name="nombre" placeholder="nombre">
+  											<button type="submit">Confirmar</button>
+										</form>
+      								</div>
+      						</div>
+      						<div class="modal-footer">
+        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
+        						<input type="submit" id="btnMoSu" class="btn btn-primary" value="Ayudar a Denuba">
+      						</div>
+    				</div>
+  				</div>
+			</div>
+
 
 			
 
