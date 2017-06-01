@@ -13,6 +13,9 @@ $(document).ready(function(){
 	$("#respFinQue").hide();
 	$("#newSug").hide();
 
+	var gNombre;
+	var gCorreo;
+
 	var dt = new Date();
 	var time = dt.getHours() + ":" + dt.getMinutes();
 	$("#txtHr1").text(time);
@@ -39,6 +42,8 @@ $(document).ready(function(){
 		var name = $("#txtnameQ").val();
 		var mail = $("#inputEmail3").val();
 		if (name != "" && mail != "") {
+			gNombre = name;
+			gCorreo = mail;
 			$("#msgCliente").show();        
 			$("#msgAut").text(name);
 			$("#modalQueja").modal("toggle");
@@ -50,6 +55,12 @@ $(document).ready(function(){
 			$("#txtNoti").text("Porfavor ingresa la informacion solicitada");
 		}
 		return false;
+	})
+
+	$("#btnFinSi").click(function(){
+		//boton para abrir el primer cuadro de dialogo del usuario
+		$("#correoFin").val(gCorreo);
+		$("#nombreFin").val(gNombre);
 	})
 
 	
