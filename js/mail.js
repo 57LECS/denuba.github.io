@@ -11,16 +11,15 @@ $(document).ready(function() {
 			alert("Surgio un error, porfavor vuelve a intentar");
 		} else {
 		// Returns successful data submission message when the entered information is stored in database.
-			$.post("https://denuba.com/email.php", {
-				name1: name,
-				email1: email,
-				message1: msg
-			}, function(data) {
-				$("#returnmessage").append(data); // Append returned message to message paragraph.
-				if (data == "Your Query has been received, We will contact you soon.") {
-					$("#form")[0].reset(); // To reset form fields on success.
-				}
-			});
+		$.ajax({
+      			url: "https://denuba.com/email.php",
+      			method: "POST",
+      			data: "{'name1': "+name+",'email1': " +email+", 'message1:'"+ msg+"}";
+   		   		dataType: "json",
+      			success: function(data) {
+          			alert("funciona");
+      			}
+		});
 		}
 	});
 });
