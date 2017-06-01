@@ -9,6 +9,7 @@
 @media screen and (max-width: 768px){
   #dNuba.com{
     visibility: hidden;
+    display: none;
   }
 
 }
