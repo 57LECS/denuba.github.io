@@ -65,10 +65,20 @@ $(document).ready(function(){
 		$("#nombreFin").val(gNombre);
 	})
 
+	$("#btnFinNo").click(function(){
+		//boton para abrir el primer cuadro de dialogo del usuario
+		$("#correoFinN").val(gCorreo);
+		$("#nombreFinN").val(gNombre);
+	})
+
 	$("#btnDemoSuFin").click(function(){
 		//boton para abrir el primer cuadro de dialogo del usuario
-		$("#correoFinSu").val(gCorreo);
-		$("#nombreFinSu").val(gNombre);
+		setTimeout(function() 
+  		{
+    		$("#correoFinSu").val(gCorreo);
+			$("#nombreFinSu").val(gNombre);
+  		}, 5000);
+		
 	})
 
 

@@ -539,7 +539,7 @@
 							<p class="help-block">Agradecemos tu tiempo y esperamos que este demo haya servido para dejar mas claro de lo que Denuba es capaz. ¿Estas decuerdo con la solucion de comunicarte en persona con nosotros?</p>
       						<a href="#" id="btnFinSi" class="btn btn-success" value="Deacuerdo" data-toggle="modal" data-target="#modalFinSi">Deacuerdo</a>
 
-        					<input type="submit" id="btnFinNo" class="btn btn-danger" value="No Deacuerdo">
+        					<a href="#" id="btnFinNo" class="btn btn-danger" value="No deacuerdo" data-toggle="modal" data-target="#modalFinNo">No deacuerdo</a>
 						</blockquote>
 						<p class="author">Rafa Gomez <span class="subtext" id="time2">00:00</span--></p>
 					</div>
@@ -572,6 +572,28 @@
   				</div>
 			</div>
 
+			<div class="modal fade" id="modalFinNo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  				<div class="modal-dialog" role="document">
+    				<div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        						<h4 class="modal-title" id="myModalLabel">Compartimos soluciones</h4>
+      						</div>
+      						<div class="modal-body">
+      								<div class="form-group">
+      								<p class="help-block">Tomaremos encuenta lo que nos has mencionado y te garantizamos que la proxima sera mejor.</p>
+      									<p class="help-block">Porfavor ayudanos a confirmar tu nombre y correo para estar en contacto contigo.</p>
+      									<form method="POST" action="http://formspree.io/lecs1496@gmail.com">
+  											<input name="email" id="correoFinN" placeholder="Your email" type="email">
+  											<input type="text" id="nombreFinN" name="nombre" placeholder="nombre">
+  											<button type="submit" class="btn btn-primary">Confirmar</button>
+										</form>
+      								</div>
+      						</div>
+    				</div>
+  				</div>
+			</div>
+
 			<div class="modal fade" id="modalFinSu" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   				<div class="modal-dialog" role="document">
     				<div class="modal-content">
@@ -589,10 +611,6 @@
   											<button type="submit" class="btn btn-primary">Confirmar</button>
 										</form>
       								</div>
-      						</div>
-      						<div class="modal-footer">
-        						<!--button type="button" class="btn btn-default" data-dismiss="modal">Close</button-->
-        						<input type="submit" id="btnMoSu" class="btn btn-primary" value="Ayudar a Denuba">
       						</div>
     				</div>
   				</div>
@@ -693,9 +711,6 @@
 										</form>
       								</div>
       							</form>
-      						</div>
-      						<div class="modal-footer">
-        						<a href="https://playbusiness.mx/startups/denuba" target="_blank" class="btn btn-success btn-block">Play Business</a>
       						</div>
     					</div>
   					</div>
