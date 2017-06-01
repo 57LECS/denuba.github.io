@@ -15,6 +15,11 @@ $(document).ready(function() {
 				name1: name,
 				email1: email,
 				message1: msg
+			}, function(data) {
+				$("#returnmessage").append(data); // Append returned message to message paragraph.
+				if (data == "Your Query has been received, We will contact you soon.") {
+					$("#form")[0].reset(); // To reset form fields on success.
+				}
 			});
 		}
 	});
